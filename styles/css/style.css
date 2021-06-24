@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'lato';
+  src: url("../../fonts/lato/lato-regular.woff2") format("woff2"), url("../../fonts/lato/lato-regular.woff") format("woff"), url("../../fonts/lato/lato-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'lato-black';
+  src: url("../../fonts/lato/lato-black.woff2") format("woff2"), url("../../fonts/lato/lato-black.woff") format("woff"), url("../../fonts/lato/lato-black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'lato-bold';
+  src: url("../../fonts/lato/lato-bold.woff2") format("woff2"), url("../../fonts/lato/lato-bold.woff") format("woff"), url("../../fonts/lato/lato-bold.ttf") format("ttf");
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerContainer {
+  max-width: 1445px;
+  margin: 0 auto;
+}
+
+.b-header {
+  height: 100vh;
+  background: url(../../../img/header/img01.jpg) no-repeat center;
+  background-size: cover;
+  padding: 34px 0 0 0;
+  color: #fff;
+}
+
+.b-header_disposition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-header__logotype {
+  font: 900 43px/1.2 "lato-black", sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.b-header__mainNav {
+  text-transform: uppercase;
+  font: 700 15px/1.2 "lato-bold", sans-serif;
+  letter-spacing: 0.025em;
+}
+
+.b-header__mainNav_disposition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.b-header__link {
+  color: inherit;
+}
+
+.b-header__link_margin {
+  padding-left: 32px;
+}
+
+.b-header__link:not(:last-child) {
+  margin-right: 25px;
+}
+/*# sourceMappingURL=style.css.map */

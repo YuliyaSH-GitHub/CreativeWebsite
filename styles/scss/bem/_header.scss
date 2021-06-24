@@ -1,0 +1,35 @@
+.b-header {
+  height: 100vh;
+  background: url(#{$pathToImg}/header/img01.jpg) no-repeat center;
+  background-size: cover;
+  padding: 34px 0 0 0;
+  color: $colorLight;
+  &_disposition {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logotype {
+    font: 900 43px/1.2 "lato-black", sans-serif;
+    letter-spacing: -0.025em;
+  }
+  &__mainNav {
+    text-transform: uppercase;
+    font: 700 15px/1.2 "lato-bold", sans-serif;
+    letter-spacing: 0.025em;
+    &_disposition {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__link {
+    color: inherit;
+
+    &_margin {
+      padding-left: 32px;
+    }
+  }
+  &__link:not(:last-child) {
+    margin-right: 25px;
+  }
+}
