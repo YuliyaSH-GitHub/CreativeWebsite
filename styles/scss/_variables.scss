@@ -1,27 +1,25 @@
 @font-face {
-    font-family: 'lato';
-    src: url('../../fonts/lato/lato-regular.woff2') format('woff2'),
-         url('../../fonts/lato/lato-regular.woff') format('woff'),
-         url('../../fonts/lato/lato-regular.ttf') format('ttf');
+  font-family: "lato-black";
+  src: url("../../fonts/lato/lato-black.woff2") format("woff2"),
+    url("../../fonts/lato/lato-black.woff") format("woff"),
+    url("../../fonts/lato/lato-black.ttf") format("ttf");
 }
 
 @font-face {
-    font-family: 'lato-black';
-    src: url('../../fonts/lato/lato-black.woff2') format('woff2'),
-         url('../../fonts/lato/lato-black.woff') format('woff'),
-         url('../../fonts/lato/lato-black.ttf') format('ttf');
+  font-family: "lato-bold";
+  src: url("../../fonts/lato/lato-bold.woff2") format("woff2"),
+    url("../../fonts/lato/lato-bold.woff") format("woff"),
+    url("../../fonts/lato/lato-bold.ttf") format("ttf");
 }
-
 @font-face {
-    font-family: 'lato-bold';
-    src: url('../../fonts/lato/lato-bold.woff2') format('woff2'),
-         url('../../fonts/lato/lato-bold.woff') format('woff'),
-         url('../../fonts/lato/lato-bold.ttf') format('ttf');
+  font-family: "lemonmilk";
+  src: url("../../fonts/lemonmilk/lemonmilk.woff2") format("woff2"),
+    url("../../fonts/lemonmilk/lemonmilk.woff") format("woff"),
+    url("../../fonts/lemonmilk/lemonmilk.otf") format("ttf");
 }
-
-
-
 
 $pathToImg: "../../../img";
-$colorLight: #fff;
+$colorWhite: #fff;
+$colorHeaderButton: #242424;
+$colorBackground: #bc2e3a;
 $headerText: "'lato', sans-serif";

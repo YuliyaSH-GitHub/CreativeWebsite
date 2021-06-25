@@ -1,35 +1,89 @@
 .b-header {
-  height: 100vh;
+  height: 890px;
   background: url(#{$pathToImg}/header/img01.jpg) no-repeat center;
+  // $colorBackground
+  background-blend-mode: multiply;
   background-size: cover;
   padding: 34px 0 0 0;
-  color: $colorLight;
+  color: $colorWhite;
+
   &_disposition {
     display: flex;
     justify-content: space-between;
   }
+
   &__logotype {
     font: 900 43px/1.2 "lato-black", sans-serif;
     letter-spacing: -0.025em;
+    align-items: flex-end;
   }
+
   &__mainNav {
     text-transform: uppercase;
     font: 700 15px/1.2 "lato-bold", sans-serif;
     letter-spacing: 0.025em;
+
     &_disposition {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
     }
   }
-  &__link {
+
+  &__navLink {
     color: inherit;
 
     &_margin {
       padding-left: 32px;
     }
   }
-  &__link:not(:last-child) {
+
+  &__navLink:not(:last-child) {
     margin-right: 25px;
+  }
+  &__wrapBack {
+    // background-color: #bc2e3a6e;
+  }
+  &__title {
+    background-color: $colorBackground;
+    mix-blend-mode: multiply;
+    color: #fff;
+    margin: 170px 0 64px 0;
+    width: 748px;
+    font: 700 158px/0.9 "lemonmilk", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    text-align: center;
+    text-shadow: 8px 8px 10px #181515cf;
+
+    &_smaller {
+      font-size: 96px;
+      letter-spacing: 0.024em;
+      line-height: 0.8;
+      display: block;
+    }
+  }
+  &__divTitle_disposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_linkDecor {
+    color: $colorHeaderButton;
+    background-color: $colorWhite;
+  }
+  &__wrap_disposition {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    margin-left: -230px;
+    z-index: 5;
+    height: 900px;
+    object-fit: cover;
+    object-position: center center;
+    padding-top: 60px;
+    filter: drop-shadow(8px 11px 62px #231f20cf);
   }
 }
