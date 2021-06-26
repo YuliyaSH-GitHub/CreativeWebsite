@@ -7,6 +7,7 @@
   color: $colorWhite;
 
   &_disposition {
+    position: relative;
     padding: 34px 0 0 0;
     display: flex;
     justify-content: space-between;
@@ -17,6 +18,22 @@
     letter-spacing: -0.025em;
     align-items: flex-end;
     z-index: 5;
+    @media (max-width: 1439px) {
+      margin-left: 10px;
+    }
+  }
+  &__burgerMenuIcon {
+    color: $colorWhite;
+    font-size: 36px;
+    z-index: 10;
+    position: absolute;
+    top: 39px;
+    right: 0;
+    padding-right: 10px;
+    display: none;
+    @media (max-width: 620px) {
+      display: block;
+    }
   }
 
   &__mainNav {
@@ -24,14 +41,28 @@
     text-transform: uppercase;
     font: 700 15px/1.2 "lato-bold", sans-serif;
     letter-spacing: 0.025em;
+    @media (max-width: 1439px) {
+      margin-right: 10px;
+    }
+    @media (max-width: 835px) {
+      margin: 0 35px;
+      line-height: 1.7;
+    }
 
     &_disposition {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+
+      @media (max-width: 835px) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      @media (max-width: 620px) {
+        display: none !important;
+      }
     }
   }
-
   &__navLink {
     color: inherit;
     &_fontAwesome {
@@ -39,11 +70,54 @@
     }
     &_margin {
       padding-left: 32px;
+      @media (max-width: 835px) {
+        padding-left: 0;
+      }
     }
   }
   &__navLink:not(:last-child) {
     margin-right: 22px;
+    @media (max-width: 835px) {
+      margin-right: 37px;
+    }
   }
+
+  &__burgerMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 600px;
+    min-width: 400px;
+    padding: 10px;
+    background-color: rgba(92, 92, 92, 0.747);
+    z-index: 10;
+    display: none;
+
+    &_display {
+      display: block;
+    }
+    &_flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (min-width: 621px) {
+      display: none !important;
+    }
+  }
+  &__burgerMenuClose {
+    color: $colorWhite;
+    font-size: 40px;
+    text-align: right;
+  }
+  &__burgerLink {
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 2;
+    margin: 12px 0;
+  }
+
 
   &__title {
     position: absolute;
@@ -57,12 +131,14 @@
     text-transform: uppercase;
     letter-spacing: 0.075em;
     text-shadow: 8px 8px 10px $colorHeaderButton;
+    @media (max-width: 452px) {
+    }
     &_decor {
       padding: 250px 0 0 0;
       display: block;
       width: 798px;
       text-align: center;
-      margin-left: calc(35% - 400px);
+      margin-left: calc(36% - 400px);
     }
     &_smaller {
       font-size: 96px;
@@ -72,21 +148,36 @@
     }
   }
 
+  &__linkImageContainer {
+    // height: 100%;
+    &_position {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
   &_linkDecor {
-    position: absolute;
-    bottom: 20%;
-    left: 30%;
+    // position: absolute;
+    // bottom: 20%;
+    // left: 25%;
     color: $colorHeaderButton;
     background-color: $colorWhite;
     z-index: 5;
+    align-self: flex-end;
+    text-align: center;
+
+    margin: 0 50px 200px 350px;
   }
+
   &__image {
-    position: absolute;
-    bottom: -14%;
-    right: 15%;
-    margin-left: 30px;
+    // position: absolute;
+    // bottom: -7%;
+    // right: 12%;
+    padding-top: 30px;
     z-index: 5;
-    height: 900px;
+    height: 816px;
     object-fit: cover;
     object-position: center center;
     filter: drop-shadow(8px 11px 62px #231f20cf);

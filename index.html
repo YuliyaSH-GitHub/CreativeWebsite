@@ -20,6 +20,8 @@
     <header class="b-header">
       <div class="headerContainer b-header_disposition">
         <div class="b-header__logotype">Agency</div>
+        <div class="b-header__burgerMenuIcon"><i class="fas fa-bars"></i></div>
+
         <nav class="b-header__mainNav b-header__mainNav_disposition">
           <a class="b-header__navLink" href="#">Home</a>
           <a class="b-header__navLink" href="#">About us</a>
@@ -41,7 +43,32 @@
             ><i class="fab fa-facebook-f"></i
           ></a>
         </nav>
+        <nav class="b-header__burgerMenu">
+         <div class="b-header__burgerMenuClose"> <i class="far fa-window-close"></i></div>
+          <div class="b-header__burgerMenu_flex">
+            <a class="b-header__burgerLink" href="#">Home</a>
+            <a class="b-header__burgerLink" href="#">About us</a>
+            <a class="b-header__burgerLink" href="#">Team</a>
+            <a class="b-header__burgerLink" href="#">Services</a>
+            <a class="b-header__burgerLink" href="#">Process</a>
+            <a class="b-header__burgerLink" href="#">Clients</a>
+            <a class="b-header__burgerLink" href="#">Work</a>
+            <a
+              class="
+                b-header__burgerLink
+                b-header__navLink_fontAwesome
+
+              "
+              href="#"
+              ><i class="fas fa-search"></i
+            ></a>
+            <a class="b-header__burgerLink b-header__navLink_fontAwesome" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </nav>
       </div>
+
       <h1 class="b-header__title">
         <span class="b-header__title_decor"
           >Think outside<span class="b-header__title_smaller"
@@ -49,8 +76,16 @@
           ></span
         >
       </h1>
-      <a class="buttonLink b-header_linkDecor" href="#">Read more</a>
-      <img class="b-header__image" src="img/header/img02.png" alt="img" />
+      <div
+        class="
+          headerContainer
+          b-header__linkImageContainer b-header__linkImageContainer_position
+        "
+      >
+        <a class="buttonLink b-header_linkDecor" href="#">Read more</a>
+        <img class="b-header__image" src="img/header/img02.png" alt="img" />
+      </div>
     </header>
+    <script src="scripts/app.js"></script>
   </body>
 </html>

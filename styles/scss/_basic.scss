@@ -9,15 +9,16 @@ h1 {
   margin: 0;
 }
 .headerContainer {
-  max-width: 1445px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
-.buttonLink {
 
+.buttonLink {
   padding: 16px 33px;
   border-radius: 50px;
   font: 700 21px/1.2 "lato-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  // flex: 0 0 128px;
 }
