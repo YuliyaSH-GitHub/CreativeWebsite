@@ -380,8 +380,8 @@ li {
   right: 1%;
   z-index: 5;
   width: 730px;
-  -webkit-filter: drop-shadow(8px 11px 62px #231f20cf);
-          filter: drop-shadow(8px 11px 62px #231f20cf);
+  -webkit-filter: drop-shadow(8px 11px 62px #1a1919e0);
+          filter: drop-shadow(8px 11px 62px #1a1919e0);
 }
 
 @media (max-width: 1439px) {
@@ -428,7 +428,9 @@ li {
 }
 
 .b-whoWeAre {
-  padding: 98px 0 90px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 98px 0 86px 0;
   min-height: 576px;
 }
 
@@ -455,5 +457,30 @@ li {
   background-color: #bc2e3a;
   color: #fff;
   margin-bottom: 28px;
+}
+
+.b-whoWeAre_linkDecor:hover {
+  color: #b3b3b3;
+}
+
+.b-whoWeAre::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 660px solid transparent;
+  border-top-color: #171717;
+  position: absolute;
+  top: 0;
+  right: -140px;
+  z-index: -3;
+}
+
+.b-whatWeDo {
+  height: 745px;
+}
+
+.b-whatWeDo_decor {
+  background-color: #f5f5f5;
 }
 /*# sourceMappingURL=style.css.map */

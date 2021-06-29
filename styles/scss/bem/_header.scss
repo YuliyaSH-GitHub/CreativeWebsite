@@ -178,7 +178,7 @@
     z-index: 5;
     width: 730px;
     @extend %imgObject;
-    filter: drop-shadow(8px 11px 62px #231f20cf);
+    filter: drop-shadow(8px 11px 62px #1a1919e0);
     @media (max-width: 1439px) {
       width: 50%;
     }

@@ -1,5 +1,7 @@
 .b-whoWeAre {
-  padding: 98px 0 90px 0;
+  position: relative;
+  overflow: hidden;
+  padding: 98px 0 86px 0;
   min-height: 576px;
   &_disposition {
     @extend %flexSpaceBetween;
@@ -13,8 +15,6 @@
       align-items: flex-start;
     }
   }
-  &__title {
-  }
   &__text {
     &_padding {
       padding-left: 16px;
@@ -25,7 +25,23 @@
     color: $colorWhite;
     margin-bottom: 28px;
   }
+  &_linkDecor:hover {
+    color: darken($colorWhite, 30%);
+  }
   &__image {
     @extend %imgObject;
   }
+}
+
+.b-whoWeAre::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 660px solid transparent;
+  border-top-color: $colorBackDelta;
+  position: absolute;
+  top: 0;
+  right: -140px;
+  z-index: -3;
 }
