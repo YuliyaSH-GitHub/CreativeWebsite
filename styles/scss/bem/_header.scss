@@ -45,7 +45,7 @@
   &__burgerMenu {
     @media (max-width: 991px) {
       padding: 15px 0;
-      background-color: rgba(71, 70, 70, 0.685);
+      background-color: $backBurgerMenu;
     }
   }
   &__navLink {
@@ -63,6 +63,9 @@
         margin-left: 0;
       }
     }
+  }
+  &__navLink:hover {
+    color: $linkHover !important;
   }
   &__navItem {
     align-self: flex-end;
@@ -149,6 +152,7 @@
     z-index: 5;
     align-self: flex-end;
     text-align: center;
+    animation-duration: 1s;
     @media (max-width: 1000px) {
       bottom: 43%;
       left: 15%;
@@ -165,6 +169,10 @@
       bottom: 65%;
       left: 15%;
     }
+  }
+  &_linkDecor:hover {
+    color: darken($linkHover, 30%);
+      
   }
   &__image {
     position: absolute;

@@ -16,15 +16,10 @@ li {
   margin: 0 auto;
 }
 
-
 .buttonLink {
-  padding: 16px 33px;
-  border-radius: 50px;
-  font: 700 21px/1.2 "lato-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
+  @extend %buttonLink;
   @media (max-width: 425px) {
     padding: 12px 20px;
-    font: 700 16px/1.0 "lato-bold", sans-serif;
+    font: 700 16px/1 "lato-bold", sans-serif;
   }
 }

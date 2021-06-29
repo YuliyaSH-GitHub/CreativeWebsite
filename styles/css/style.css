@@ -13,6 +13,14 @@
   src: url("../../fonts/lemonmilk/lemonmilk.woff2") format("woff2"), url("../../fonts/lemonmilk/lemonmilk.woff") format("woff"), url("../../fonts/lemonmilk/lemonmilk.otf") format("ttf");
 }
 
+.buttonLink {
+  padding: 16px 33px;
+  border-radius: 50px;
+  font: 700 21px/1.2 "lato-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -35,18 +43,10 @@ li {
   margin: 0 auto;
 }
 
-.buttonLink {
-  padding: 16px 33px;
-  border-radius: 50px;
-  font: 700 21px/1.2 "lato-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
-
 @media (max-width: 425px) {
   .buttonLink {
     padding: 12px 20px;
-    font: 700 16px/1.0 "lato-bold", sans-serif;
+    font: 700 16px/1 "lato-bold", sans-serif;
   }
 }
 
@@ -152,6 +152,10 @@ li {
   .b-header__navLink_fontAwesomeMargin {
     margin-left: 0;
   }
+}
+
+.b-header__navLink:hover {
+  color: #979696 !important;
 }
 
 .b-header__navItem {
@@ -280,6 +284,8 @@ li {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-align: center;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @media (max-width: 1000px) {
@@ -308,6 +314,10 @@ li {
     bottom: 65%;
     left: 15%;
   }
+}
+
+.b-header_linkDecor:hover {
+  color: #4a4a4a;
 }
 
 .b-header__image {
