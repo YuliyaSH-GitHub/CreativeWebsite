@@ -1,0 +1,64 @@
+.b-whatWeDo {
+  //   min-height: 745px;
+
+  &_decor {
+    background-color: $colorBackSection;
+    padding: 94px 0 115px 0;
+  }
+  &__grid {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(3, 426px);
+    grid-row-gap: 80px;
+    grid-column-gap: 5px;
+  }
+  &__title {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__gridItem {
+    // width: 317px;
+    padding-left: 86px;
+    position: relative;
+  }
+  &__gridItem::before {
+    content: "";
+    display: inline-block;
+    width: 73px;
+    height: 73px;
+
+    border-radius: 50%;
+    background-image: url(#{$pathToImg}/whatWeDo/icon01.png);
+    background-color: $colorBackground;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+  &__gridItem:nth-child(3)::before {
+    background-image: url(#{$pathToImg}/whatWeDo/icon02.png);
+  }
+  &__gridItem:nth-child(4)::before {
+    background-image: url(#{$pathToImg}/whatWeDo/icon03.png);
+  }
+  &__gridItem:nth-child(5)::before {
+    background-image: url(#{$pathToImg}/whatWeDo/icon04.png);
+  }
+  &__gridItem:nth-child(6)::before {
+    background-image: url(#{$pathToImg}/whatWeDo/icon05.png);
+  }
+  &__gridItem:nth-child(7)::before {
+    background-image: url(#{$pathToImg}/whatWeDo/icon05.png);
+  }
+  &__gridItemTitle {
+    font: 800 $fontSectionText;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: $colorgridItemTitle;
+    margin-bottom: 20px;
+  }
+}
