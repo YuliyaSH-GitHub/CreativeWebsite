@@ -70,7 +70,7 @@ li {
 }
 
 .mainContainer {
-  max-width: 1214px;
+  max-width: 1228px;
   margin: 0 auto;
 }
 
@@ -82,8 +82,14 @@ li {
 }
 
 .sectionTitle {
-  font: 400 62px/1.2 "peace sans", sans-serif;
+  font: 400 62px/0.9 "peace sans", sans-serif;
   color: #494949;
+}
+
+@media (max-width: 425px) {
+  .sectionTitle {
+    font: 400 52px/0.9 "peace sans", sans-serif;
+  }
 }
 
 .sectionText {
@@ -434,9 +440,35 @@ li {
   min-height: 576px;
 }
 
+@media (max-width: 1227px) {
+  .b-whoWeAre {
+    padding: 48px 0 36px 0;
+  }
+}
+
+.b-whoWeAre_disposition {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1227px) {
+  .b-whoWeAre_disposition {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .b-whoWeAre__divContent {
+  margin: 0 20px;
   width: 500px;
   min-height: 386px;
+}
+
+@media (max-width: 1227px) {
+  .b-whoWeAre__divContent {
+    min-height: 316px;
+  }
 }
 
 .b-whoWeAre__divContent_disposition {
@@ -449,6 +481,12 @@ li {
           align-items: flex-start;
 }
 
+@media (max-width: 425px) {
+  .b-whoWeAre__text {
+    margin: 15px 0;
+  }
+}
+
 .b-whoWeAre__text_padding {
   padding-left: 16px;
 }
@@ -459,21 +497,21 @@ li {
   margin-bottom: 28px;
 }
 
+@media (max-width: 1227px) {
+  .b-whoWeAre_linkDecor {
+    margin-bottom: 32px;
+  }
+}
+
 .b-whoWeAre_linkDecor:hover {
   color: #b3b3b3;
 }
 
-.b-whoWeAre::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 660px solid transparent;
-  border-top-color: #171717;
-  position: absolute;
-  top: 0;
-  right: -10%;
-  z-index: -3;
+@media (max-width: 715px) {
+  .b-whoWeAre__image {
+    width: 100%;
+    padding: 0 5px;
+  }
 }
 
 .b-whatWeDo_decor {

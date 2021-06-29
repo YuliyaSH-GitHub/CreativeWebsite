@@ -16,7 +16,7 @@ li {
   margin: 0 auto;
 }
 .mainContainer {
-  max-width: 1214px;
+  max-width: 1228px;
   margin: 0 auto;
 }
 
@@ -29,8 +29,11 @@ li {
 }
 
 .sectionTitle {
-  font: 400 62px/1.2 $fontSectionTitle;
+  font: 400 62px/0.9 $fontSectionTitle;
   color: $colorSectionTitle;
+  @media (max-width: 425px) {
+    font: 400 52px/0.9 $fontSectionTitle;
+  }
 }
 
 .sectionText {

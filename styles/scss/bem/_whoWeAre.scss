@@ -3,12 +3,23 @@
   overflow: hidden;
   padding: 98px 0 86px 0;
   min-height: 576px;
+  @media (max-width: 1227px) {
+    padding: 48px 0 36px 0;
+  }
   &_disposition {
     @extend %flexSpaceBetween;
+    flex-wrap: wrap;
+    @media (max-width: 1227px) {
+      justify-content: center;
+    }
   }
   &__divContent {
+    margin: 0 20px;
     width: 500px;
     min-height: 386px;
+    @media (max-width: 1227px) {
+      min-height: 316px;
+    }
     &_disposition {
       @extend %flexSpaceBetween;
       flex-direction: column;
@@ -16,6 +27,9 @@
     }
   }
   &__text {
+    @media (max-width: 425px) {
+      margin: 15px 0;
+    }
     &_padding {
       padding-left: 16px;
     }
@@ -24,24 +38,31 @@
     background-color: $colorBackground;
     color: $colorWhite;
     margin-bottom: 28px;
+    @media (max-width: 1227px) {
+      margin-bottom: 32px;
+    }
   }
   &_linkDecor:hover {
     color: darken($colorWhite, 30%);
   }
   &__image {
     @extend %imgObject;
+    @media (max-width: 715px) {
+        width: 100%;
+        padding: 0 5px;
+      }
   }
 }
 
-.b-whoWeAre::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: 660px solid transparent;
-  border-top-color: $colorBackDelta;
-  position: absolute;
-  top: 0;
-  right: -10%;
-  z-index: -3;
-}
+// .b-whoWeAre::after {
+//   content: "";
+//   display: block;
+//   width: 0;
+//   height: 0;
+//   border: 660px solid transparent;
+//   border-top-color: $colorBackDelta;
+//   position: absolute;
+//   top: 0;
+//   right: -10%;
+//   z-index: -3;
+// }
