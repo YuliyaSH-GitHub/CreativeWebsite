@@ -13,12 +13,11 @@
   }
   &_disposition {
     padding: 34px 0 0 0;
-    display: flex;
-    justify-content: space-between;
+    @extend %flexSpaceBetween;
   }
 
   &__logotype {
-    font: 900 43px/1.1 "lato-black", sans-serif;
+    font: 900 43px/1.1 $fontLogotype;
     letter-spacing: -0.025em;
     align-items: flex-end;
     z-index: 5;
@@ -30,15 +29,14 @@
   &__mainNav {
     z-index: 10;
     text-transform: uppercase;
-    font: 700 15px/1.2 "lato-bold", sans-serif;
+    font: 700 15px/1.2 $fontMainNav;
     letter-spacing: 0.025em;
     @media (max-width: 991px) {
       position: absolute;
       right: 0;
     }
     &_disposition {
-      display: flex;
-      justify-content: space-between;
+      @extend %flexSpaceBetween;
       align-items: flex-end;
     }
   }
@@ -65,7 +63,7 @@
     }
   }
   &__navLink:hover {
-    color: $linkHover !important;
+    color: $colorlinkHover !important;
   }
   &__navItem {
     align-self: flex-end;
@@ -80,7 +78,7 @@
     mix-blend-mode: multiply;
     width: 100%;
     height: 890px;
-    font: 700 158px/0.9 "lemonmilk", sans-serif;
+    font: 700 158px/0.9 $fontHeaderTitle;
     text-transform: uppercase;
     letter-spacing: 0.075em;
     text-shadow: 8px 8px 10px $colorHeaderButton;
@@ -171,8 +169,7 @@
     }
   }
   &_linkDecor:hover {
-    color: darken($linkHover, 30%);
-      
+    color: lighten($colorHeaderButton, 5%);
   }
   &__image {
     position: absolute;
@@ -180,8 +177,7 @@
     right: 1%;
     z-index: 5;
     width: 730px;
-    object-fit: cover;
-    object-position: center center;
+    @extend %imgObject;
     filter: drop-shadow(8px 11px 62px #231f20cf);
     @media (max-width: 1439px) {
       width: 50%;

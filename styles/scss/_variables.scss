@@ -15,16 +15,37 @@
   font-family: "lemonmilk";
   src: url("../../fonts/lemonmilk/lemonmilk.woff2") format("woff2"),
     url("../../fonts/lemonmilk/lemonmilk.woff") format("woff"),
-    url("../../fonts/lemonmilk/lemonmilk.otf") format("ttf");
+    url("../../fonts/lemonmilk/lemonmilk.otf") format("otf");
+}
+
+@font-face {
+  font-family: "peace sans";
+  src: url("../../fonts/peace_sans/peace_sans.woff2") format("woff2"),
+    url("../../fonts/peace_sans/peace_sans.woff") format("woff"),
+    url("../../fonts/peace_sans/peace_sans.otf") format("otf");
+}
+
+@font-face {
+  font-family: "open sans";
+  src: url("../../fonts/open-sans/open-sans.woff2") format("woff2"),
+    url("../../fonts/open-sans/open-sans.woff") format("woff"),
+    url("../../fonts/open-sans/open-sans.otf") format("otf");
 }
 
 $pathToImg: "../../../img";
 $colorWhite: #fff;
 $colorHeaderButton: #242424;
 $colorBackground: #bc2e3a;
+
 $backBurgerMenu: rgba(71, 70, 70, 0.685);
-$linkHover: #979696;
-$headerText: "'lato', sans-serif";
+$colorlinkHover: #979696;
+$colorSectionTitle :#494949;
+$colorSectionText: #6a6a6a;
+$fontLogotype: "lato-black", sans-serif;
+$fontMainNav: "lato-bold", sans-serif;
+$fontHeaderTitle: "lemonmilk", sans-serif;
+$fontSectionTitle: "peace sans", sans-serif;
+$fontSectionText: "open sans", sans-serif;
 
 %buttonLink {
   padding: 16px 33px;
@@ -32,4 +53,20 @@ $headerText: "'lato', sans-serif";
   font: 700 21px/1.2 "lato-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+}
+
+%imgObject {
+  object-fit: cover;
+  object-position: center center;
+}
+
+%flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

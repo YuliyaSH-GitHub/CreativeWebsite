@@ -1,0 +1,31 @@
+.b-whoWeAre {
+  padding: 98px 0 90px 0;
+  min-height: 576px;
+  &_disposition {
+    @extend %flexSpaceBetween;
+  }
+  &__divContent {
+    width: 500px;
+    min-height: 386px;
+    &_disposition {
+      @extend %flexSpaceBetween;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__title {
+  }
+  &__text {
+    &_padding {
+      padding-left: 16px;
+    }
+  }
+  &_linkDecor {
+    background-color: $colorBackground;
+    color: $colorWhite;
+    margin-bottom: 28px;
+  }
+  &__image {
+    @extend %imgObject;
+  }
+}
