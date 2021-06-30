@@ -72,3 +72,10 @@ $fontSectionText: "open sans", sans-serif;
   justify-content: center;
   align-items: center;
 }
+%backElemDelta {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+}

@@ -4,8 +4,6 @@
   padding: 98px 0 86px 0;
   min-height: 576px;
   margin-top: -3px;
-//   background-color: yellow;
-//   z-index: -5;
   @media (max-width: 1227px) {
     padding: 48px 0 36px 0;
   }
@@ -58,13 +56,9 @@
 }
 
 .b-whoWeAre::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
+  @extend %backElemDelta;
   border: 660px solid transparent;
   border-top-color: $colorBackDelta;
-  position: absolute;
   top: 0;
   right: -10%;
   z-index: -3;

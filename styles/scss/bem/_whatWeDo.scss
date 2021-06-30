@@ -1,6 +1,5 @@
 .b-whatWeDo {
-  //   min-height: 745px;
-
+  position: relative;
   &_decor {
     background-color: $colorBackSection;
     padding: 94px 0 115px 0;
@@ -8,8 +7,8 @@
       padding: 74px 0 65px 0;
     }
     @media (max-width: 425px) {
-        padding: 44px 0 35px 0;
-      }
+      padding: 44px 0 35px 0;
+    }
   }
   &__grid {
     display: grid;
@@ -20,11 +19,10 @@
 
     @media (max-width: 810px) {
       grid-row-gap: 30px;
-      grid-column-gap: 0;
-    }
+     }
     @media (max-width: 375px) {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      }
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
   &__title {
     grid-column: 1/-1;
@@ -55,8 +53,8 @@
       margin-right: 15px;
     }
     @media (max-width: 425px) {
-        padding: 74px 0 0 0;
-      }
+      padding: 74px 0 0 0;
+    }
   }
   &__gridItem::before {
     content: "";
@@ -73,8 +71,8 @@
     top: -10px;
     left: 0;
     @media (max-width: 425px) {
-        left: calc(50% - 37px);
-     }
+      left: calc(50% - 37px);
+    }
   }
   &__gridItem:nth-child(3)::before {
     background-image: url(#{$pathToImg}/whatWeDo/icon02.png);
@@ -101,7 +99,7 @@
     @media (max-width: 800px) {
       width: 100%;
     }
-   }
+  }
   &__gridItemTitle {
     font: 800 $fontSectionText;
     font-size: 30px;
@@ -109,5 +107,16 @@
     letter-spacing: -0.025em;
     color: $colorgridItemTitle;
     margin-bottom: 20px;
+  }
+}
+.b-whatWeDo::after {
+  @extend %backElemDelta;
+  border: 99px solid transparent;
+  border-left-color: $colorBackground;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+  @media (max-width: 1300px) {
+    display: none;
   }
 }
