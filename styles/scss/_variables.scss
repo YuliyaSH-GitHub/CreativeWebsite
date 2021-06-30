@@ -59,7 +59,7 @@ $fontSectionText: "open sans", sans-serif;
 
 %imgObject {
   object-fit: cover;
-  object-position: center center;
+  object-position: center center !important;
 }
 
 %flexSpaceBetween {

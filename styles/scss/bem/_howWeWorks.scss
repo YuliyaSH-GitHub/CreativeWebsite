@@ -1,0 +1,10 @@
+.b-howWeWorks {
+  &_linkDecor {
+    background-color: $colorBackground;
+    color: $colorWhite;
+    margin-bottom: 13px;
+  }
+  &_linkDecor:hover {
+    color: darken($colorWhite, 30%);
+  }
+}

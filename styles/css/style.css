@@ -34,8 +34,8 @@
 .b-header__image, .b-whoWeAre__image {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
+  -o-object-position: center center !important;
+     object-position: center center !important;
 }
 
 .b-header_disposition, .b-header__mainNav_disposition, .b-whoWeAre_disposition, .b-whoWeAre__divContent_disposition {
@@ -456,6 +456,9 @@ li {
 }
 
 .b-whoWeAre_disposition {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -470,7 +473,6 @@ li {
 
 .b-whoWeAre__divContent {
   margin: 0 20px;
-  width: 500px;
   min-height: 386px;
 }
 
@@ -490,6 +492,29 @@ li {
           align-items: flex-start;
 }
 
+.b-whoWeAre__title_span {
+  white-space: nowrap;
+}
+
+@media (max-width: 375px) {
+  .b-whoWeAre__title {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.1;
+  }
+}
+
+.b-whoWeAre__text {
+  width: 500px;
+}
+
+@media (max-width: 618px) {
+  .b-whoWeAre__text {
+    width: 100%;
+  }
+}
+
 @media (max-width: 425px) {
   .b-whoWeAre__text {
     margin: 15px 0;
@@ -497,7 +522,7 @@ li {
 }
 
 .b-whoWeAre__text_padding {
-  padding-left: 16px;
+  padding: 15px 0 15px 16px;
 }
 
 .b-whoWeAre_linkDecor {
@@ -516,9 +541,15 @@ li {
   color: #b3b3b3;
 }
 
+.b-whoWeAre__image {
+  width: 687px;
+  height: 394px;
+}
+
 @media (max-width: 715px) {
   .b-whoWeAre__image {
     width: 100%;
+    height: 100%;
     padding: 0 5px;
   }
 }
@@ -708,5 +739,15 @@ li {
   .b-whatWeDo::after {
     display: none;
   }
+}
+
+.b-howWeWorks_linkDecor {
+  background-color: #bc2e3a;
+  color: #fff;
+  margin-bottom: 13px;
+}
+
+.b-howWeWorks_linkDecor:hover {
+  color: #b3b3b3;
 }
 /*# sourceMappingURL=style.css.map */
