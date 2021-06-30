@@ -31,7 +31,7 @@
   letter-spacing: 0.025em;
 }
 
-.b-header__image, .b-whoWeAre__image {
+.b-header__image, .b-whoWeAre__image, .b-howWeWorks__image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center !important;
@@ -58,6 +58,7 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  min-height: 100vh;
 }
 
 a {
@@ -164,9 +165,9 @@ li {
   z-index: 5;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1440px) {
   .b-header__logotype {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 
@@ -741,6 +742,33 @@ li {
   }
 }
 
+.b-howWeWorks {
+  position: relative;
+  overflow: hidden;
+}
+
+.b-howWeWorks_padding {
+  padding: 125px 0 205px 0;
+}
+
+.b-howWeWorks_disposition {
+  position: relative;
+}
+
+.b-howWeWorks__divContent {
+  padding: 0 15px;
+}
+
+.b-howWeWorks__title {
+  padding: 0 15px;
+  margin-bottom: 67px;
+}
+
+.b-howWeWorks__text {
+  width: 325px;
+  margin-bottom: 55px;
+}
+
 .b-howWeWorks_linkDecor {
   background-color: #bc2e3a;
   color: #fff;
@@ -749,5 +777,36 @@ li {
 
 .b-howWeWorks_linkDecor:hover {
   color: #b3b3b3;
+}
+
+.b-howWeWorks__slider {
+  width: 1500px;
+  height: 297px;
+  overflow: hidden;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.b-howWeWorks__slide {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  width: 388px !important;
+  height: 297px;
+}
+
+.b-howWeWorks__image {
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 135%;
+  height: 100%;
+  -webkit-transform: skewX(25deg) translateX(-50%);
+          transform: skewX(25deg) translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

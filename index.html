@@ -117,7 +117,7 @@
         >
         <img class="b-header__image" src="img/header/img02.png" alt="img" />
       </div>
-    </header>
+    </header> 
     <section class="b-whoWeAre">
       <div class="mainContainer b-whoWeAre_disposition">
         <div class="b-whoWeAre__divContent b-whoWeAre__divContent_disposition">
@@ -139,7 +139,7 @@
         />
       </div>
     </section>
-     <section class="b-whatWeDo b-whatWeDo_decor">
+      <section class="b-whatWeDo b-whatWeDo_decor">
       <div class="mainContainer b-whatWeDo__grid">
         <h2 class="sectionTitle b-whatWeDo__title">What we do</h2>
         <div class="b-whatWeDo__gridItem">
@@ -186,10 +186,11 @@
         </div>
       </div>
     </section> 
-    <section class="b-howWeWorks">
+    <section class="b-howWeWorks b-howWeWorks_padding">
       <div class="mainContainer b-howWeWorks_disposition">
+        <h2 class="sectionTitle b-howWeWorks__title">How we works</h2>
         <div class="b-howWeWorks__divContent b-howWeWorks__divContent_disposition">
-          <h2 class="sectionTitle b-howWeWorks__title">How we works</h2>
+         
           <p class="sectionText b-howWeWorks__text b-howWeWorks__text_padding">
             Sed ut&nbsp;perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -200,8 +201,19 @@
             >Read more</a
           >
         </div>
+        <div class="swiper-container b-howWeWorks__slider">
+          <div class="swiper-wrapper b-howWeWorks__slider_padding">
+            <!-- Slides -->
+            <div class="swiper-slide"> <div class="b-howWeWorks__slide"><img class="b-howWeWorks__image" src="img/howWeWorks/img01.jpg" alt="image" /></div></div>
+            <div class="swiper-slide"> <div class="b-howWeWorks__slide"><img class="b-howWeWorks__image" src="img/howWeWorks/img02.jpg" alt="image" /></div></div>
+            <div class="swiper-slide"> <div class="b-howWeWorks__slide"><img class="b-howWeWorks__image" src="img/howWeWorks/img03.jpg" alt="image" /></div></div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
+ 
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -217,5 +229,6 @@
     ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/animate.js"></script>
+    <script src="scripts/slider.js"></script>
   </body>
 </html>

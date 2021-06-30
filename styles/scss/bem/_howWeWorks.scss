@@ -1,4 +1,24 @@
 .b-howWeWorks {
+  position: relative;
+  overflow: hidden;
+  &_padding {
+    padding: 125px 0 205px 0;
+  }
+  &_disposition {
+    position: relative;
+  }
+  &__divContent {
+    padding: 0 15px;
+  }
+  &__title {
+    padding: 0 15px;
+    margin-bottom: 67px;
+  }
+  &__text {
+    width: 325px;
+    margin-bottom: 55px;
+  }
+
   &_linkDecor {
     background-color: $colorBackground;
     color: $colorWhite;
@@ -6,5 +26,33 @@
   }
   &_linkDecor:hover {
     color: darken($colorWhite, 30%);
+  }
+  &__slider {
+      width: 1500px;
+    height: 297px;
+    overflow: hidden;
+       transform: skewX(-25deg);
+    transition: all 0.15s;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+  }
+  &__slide {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    width: 388px !important;
+    height: 297px;
+  
+  }
+  &__image {
+    display: block;
+    @extend %imgObject;
+    position: absolute;
+    left: 50%;
+    width: 135%;
+    height: 100%;
+    transform: skewX(25deg) translateX(-50%);
   }
 }
