@@ -544,13 +544,11 @@ li {
 
 .b-whoWeAre__image {
   width: 687px;
-  height: 394px;
 }
 
 @media (max-width: 715px) {
   .b-whoWeAre__image {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     padding: 0 5px;
   }
 }
@@ -574,7 +572,7 @@ li {
 
 @media (max-width: 1209px) {
   .b-whatWeDo_decor {
-    padding: 74px 0 65px 0;
+    padding: 65px 0 55px 0;
   }
 }
 
@@ -743,7 +741,6 @@ li {
 }
 
 .b-howWeWorks {
-  position: relative;
   overflow: hidden;
 }
 
@@ -751,12 +748,27 @@ li {
   padding: 125px 0 205px 0;
 }
 
+@media (max-width: 1000px) {
+  .b-howWeWorks_padding {
+    padding: 55px 0 65px 0;
+  }
+}
+
 .b-howWeWorks_disposition {
   position: relative;
 }
 
 .b-howWeWorks__divContent {
+  max-width: 325px;
   padding: 0 15px;
+}
+
+@media (max-width: 1000px) {
+  .b-howWeWorks__divContent {
+    max-width: none;
+    padding: 0 30px;
+    text-align: center;
+  }
 }
 
 .b-howWeWorks__title {
@@ -764,8 +776,15 @@ li {
   margin-bottom: 67px;
 }
 
+@media (max-width: 1000px) {
+  .b-howWeWorks__title {
+    margin-bottom: 37px;
+    text-align: center;
+  }
+}
+
 .b-howWeWorks__text {
-  width: 325px;
+  max-width: 100%;
   margin-bottom: 55px;
 }
 
@@ -792,12 +811,18 @@ li {
   left: 35%;
 }
 
+@media (max-width: 1000px) {
+  .b-howWeWorks__slider {
+    display: none;
+  }
+}
+
 .b-howWeWorks__slide {
   position: relative;
   z-index: 10;
   overflow: hidden;
   width: 388px !important;
-  height: 297px;
+  height: 100%;
 }
 
 .b-howWeWorks__image {

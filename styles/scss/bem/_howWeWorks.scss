@@ -1,21 +1,33 @@
 .b-howWeWorks {
-  position: relative;
   overflow: hidden;
   &_padding {
     padding: 125px 0 205px 0;
+    @media (max-width: 1000px) {
+      padding: 55px 0 65px 0;
+    }
   }
   &_disposition {
     position: relative;
   }
   &__divContent {
+    max-width: 325px;
     padding: 0 15px;
+    @media (max-width: 1000px) {
+      max-width: none;
+      padding: 0 30px;
+      text-align: center;
+    }
   }
   &__title {
     padding: 0 15px;
     margin-bottom: 67px;
+    @media (max-width: 1000px) {
+      margin-bottom: 37px;
+      text-align: center;
+    }
   }
   &__text {
-    width: 325px;
+    max-width: 100%;
     margin-bottom: 55px;
   }
 
@@ -28,23 +40,24 @@
     color: darken($colorWhite, 30%);
   }
   &__slider {
-      width: 1500px;
+    width: 1500px;
     height: 297px;
     overflow: hidden;
-       transform: skewX(-25deg);
+    transform: skewX(-25deg);
     transition: all 0.15s;
     position: absolute;
     top: 30%;
     left: 35%;
-
+    @media (max-width: 1000px) {
+      display: none;
+    }
   }
   &__slide {
     position: relative;
     z-index: 10;
     overflow: hidden;
     width: 388px !important;
-    height: 297px;
-  
+    height: 100%;
   }
   &__image {
     display: block;
