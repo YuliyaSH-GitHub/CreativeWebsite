@@ -5,9 +5,9 @@ const swiper = new Swiper('.b-howWeWorks__slider', {
     slidesPerView: 3,
     spaceBetween: 10,
     loop: true,
-    autoplay: {
-        delay: 2000,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    // },
     keyboard: {
         enabled: true,
         onlyInViewport: true,
