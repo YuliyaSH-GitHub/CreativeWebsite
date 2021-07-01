@@ -32,6 +32,13 @@
     url("../../fonts/open-sans/open-sans.otf") format("otf");
 }
 
+@font-face {
+  font-family: "open sans_extrabold";
+  src: url("../../fonts/open-sans/open-sans_extrabold.woff2") format("woff2"),
+    url("../../fonts/open-sans/open-sans_extrabold.woff") format("woff"),
+    url("../../fonts/open-sans/open-sans_extrabold.otf") format("otf");
+}
+
 $pathToImg: "../../../img";
 $colorWhite: #fff;
 $colorHeaderButton: #242424;
@@ -47,6 +54,8 @@ $fontLogotype: "lato-black", sans-serif;
 $fontMainNav: "lato-bold", sans-serif;
 $fontHeaderTitle: "lemonmilk", sans-serif;
 $fontSectionTitle: "peace sans", sans-serif;
+$fontSectionTextExtraBold: "open sans_extrabold", sans-serif;
+
 $fontSectionText: "open sans", sans-serif;
 
 %buttonLink {
@@ -55,6 +64,8 @@ $fontSectionText: "open sans", sans-serif;
   font: 700 21px/1.2 "lato-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  text-align: center;
+  max-width: 198px;
 }
 
 %imgObject {

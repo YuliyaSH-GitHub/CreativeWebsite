@@ -1,46 +1,61 @@
 .b-howWeWorks {
-  overflow: hidden;
+  position: relative;
+
+  &_overflow {
+    overflow: hidden;
+  }
   &_padding {
     padding: 125px 0 205px 0;
     @media (max-width: 1000px) {
-      padding: 55px 0 65px 0;
+      padding: 50px 0;
+    }
+    @media (max-width: 425px) {
+      padding: 35px 0;
     }
   }
   &_disposition {
     position: relative;
   }
+
   &__divContent {
     max-width: 325px;
-    padding: 0 15px;
+    padding: 18px 15px;
     @media (max-width: 1000px) {
       max-width: none;
-      padding: 0 30px;
+      padding: 18px 30px;
       text-align: center;
     }
   }
   &__title {
     padding: 0 15px;
-    margin-bottom: 67px;
+    margin-bottom: 50px;
     @media (max-width: 1000px) {
-      margin-bottom: 37px;
+      margin-bottom: 15px;
       text-align: center;
+    }
+    @media (max-width: 425px) {
+      padding: 0;
+      margin-bottom: 0;
     }
   }
   &__text {
     max-width: 100%;
     margin-bottom: 55px;
+    @media (max-width: 425px) {
+      margin-bottom: 35px;
+    }
   }
 
   &_linkDecor {
     background-color: $colorBackground;
     color: $colorWhite;
-    margin-bottom: 13px;
+    display: block;
   }
   &_linkDecor:hover {
     color: darken($colorWhite, 30%);
   }
   &__slider {
-    width: 1500px;
+    width: 1360px;
     height: 297px;
     overflow: hidden;
     transform: skewX(-25deg);
@@ -48,6 +63,7 @@
     position: absolute;
     top: 30%;
     left: 35%;
+    z-index: 10 !important;
     @media (max-width: 1000px) {
       display: none;
     }
@@ -67,5 +83,69 @@
     width: 135%;
     height: 100%;
     transform: skewX(25deg) translateX(-50%);
+  }
+  &__slideContent {
+    width: 388px !important;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+  }
+  &__slideContent:hover {
+    background-color: lighten($backBurgerMenu, 10%);
+  }
+  &__slideContent:hover .b-howWeWorks__slideText {
+    display: block;
+  }
+  &__slideNumber {
+    align-self: flex-end;
+    margin-right: 10px;
+    font: 700 58px/1 "lato-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: $colorWhite;
+    transform: skewX(25deg);
+    z-index: 10;
+  }
+
+  &__slideTextDiv_decor {
+    margin: 0 20px;
+    transform: skewX(25deg);
+    z-index: 10;
+  }
+
+  &__slideTitle {
+    font: 700 40px/1 "lato-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: $colorWhite;
+  }
+  &__slideText {
+    margin-top: 20px;
+    font: 400 18px $fontSectionText;
+    line-height: 30px;
+    color: $colorWhite;
+    max-width: 240px;
+    display: none;
+    transition-duration: 1s;
+  }
+}
+
+.b-howWeWorks::after {
+  @extend %backElemDelta;
+  border: 600px solid transparent;
+  border-right-color: $colorBackground;
+  top: -30%;
+  right: 0;
+  z-index: 9;
+  @media (max-width: 1000px) {
+    display: none;
   }
 }

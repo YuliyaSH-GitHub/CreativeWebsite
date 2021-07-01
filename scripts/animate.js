@@ -7,3 +7,15 @@ buttonLink.forEach(item => {
         }, 1000);
     })
 });
+
+
+let slideContent = document.querySelectorAll('.b-howWeWorks__slideContent');
+slideContent.forEach(item => {
+let slideText = item.querySelector('.b-howWeWorks__slideText');
+item.addEventListener('mouseover', () => {
+    slideText.classList.add('animate__slideInUp');
+        setTimeout(() => {
+            slideText.classList.remove('animate__slideInUp');
+        }, 1000);
+    })
+});
