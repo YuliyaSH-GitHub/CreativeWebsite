@@ -823,7 +823,6 @@ li {
   position: relative;
   width: 240px;
   height: 240px;
-  text-align: center;
   overflow: hidden;
   -webkit-transform: rotate(45deg) !important;
           transform: rotate(45deg) !important;
@@ -990,6 +989,210 @@ li {
   .b-ourCreativeTeam::after {
     display: none;
   }
+}
+
+.b-whatClientSays {
+  position: relative;
+}
+
+.b-whatClientSays_decor {
+  padding: 100px 0 125px;
+}
+
+@media (max-width: 1209px) {
+  .b-whatClientSays_decor {
+    padding: 65px 0 55px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays_decor {
+    padding: 35px 0;
+  }
+}
+
+.b-whatClientSays__title {
+  text-align: left;
+  padding: 0 0 52px 95px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1100px) {
+  .b-whatClientSays__title {
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+.b-whatClientSays__divContent_disposition {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .b-whatClientSays__divContent_disposition {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.b-whatClientSays__divContent_padding {
+  padding-top: 60px;
+}
+
+.b-whatClientSays__imageWrap {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 8px solid #fff;
+}
+
+@media (max-width: 480px) {
+  .b-whatClientSays__imageWrap {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.b-whatClientSays__image {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: rotate(-45deg) scale(1.42);
+          transform: rotate(-45deg) scale(1.42);
+}
+
+.b-whatClientSays__quoteDiv {
+  position: relative;
+}
+
+.b-whatClientSays__quoteDiv_margin {
+  margin: 45px 0 0 120px;
+}
+
+@media (max-width: 1100px) {
+  .b-whatClientSays__quoteDiv_margin {
+    margin: 100px 0 0 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays__quoteDiv_margin {
+    margin: 45px 15px 0;
+  }
+}
+
+.b-whatClientSays__quoteDiv::before {
+  content: " “ ";
+  font: 600 200px sans-serif;
+  line-height: 331px;
+  color: #6a6a6a;
+  position: absolute;
+  top: -34%;
+  left: -16%;
+}
+
+@media (max-width: 1100px) {
+  .b-whatClientSays__quoteDiv::before {
+    top: -42%;
+    left: -1%;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays__quoteDiv::before {
+    font: 600 150px sans-serif;
+    top: -16%;
+    left: -1%;
+  }
+}
+
+.b-whatClientSays__text {
+  max-width: 670px;
+  font: italic 400 20px "open sans", sans-serif;
+  line-height: 30px;
+  color: #6a6a6a;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays__text {
+    font: italic 400 16px "open sans", sans-serif;
+  }
+}
+
+.b-whatClientSays__textAuthor {
+  font: 700 18px "open sans", sans-serif;
+  line-height: 30px;
+  color: #6a6a6a;
+  margin: 30px 0 56px 0;
+}
+
+@media (max-width: 1100px) {
+  .b-whatClientSays__textAuthor {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays__textAuthor {
+    font: 700 16px "open sans", sans-serif;
+  }
+}
+
+.b-whatClientSays__iconDiv_disposition {
+  max-width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 35px;
+}
+
+@media (max-width: 425px) {
+  .b-whatClientSays__iconDiv_disposition {
+    margin: 0 auto;
+  }
+}
+
+.b-whatClientSays__iconWrap {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+.b-whatClientSays__icon {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: rotate(-45deg) scale(1.42);
+          transform: rotate(-45deg) scale(1.42);
 }
 
 .b-whoWeAre {
