@@ -7,18 +7,11 @@ $(document).ready(function () {
     slidesToShow: 3,
     adaptiveHeight: true,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 900,
     responsive:[
 			{
-				breakpoint: 768,
-				settings: {
-          autoplay: false,
-					slidesToShow:2
-				}
-			},
-			{
-				breakpoint: 550,
+				breakpoint: 1051,
 				settings: {
           autoplay: false,
 					slidesToShow:1

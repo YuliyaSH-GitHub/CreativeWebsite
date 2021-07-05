@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
 }
+
 .slider {
   min-width: 0;
   // height: 700px;
@@ -14,21 +15,32 @@
 
 .slick-list {
   overflow: hidden;
-  // padding-top: 50px !important;
-  // padding-bottom: 50px !important;
+
 }
 
 /* Лента слайдов */
 .slick-track {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+
 }
 
 .slick-slide {
   transition: all ease-in-out 0.3s;
   opacity: 0;
+  min-height: 600px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
   transform: scale(0.8);
-    margin: 0px 20px;
+  margin: 0px 20px;
+
+  @media (max-width: 650px) {
+    min-height: 480px;
+  }
+  @media (max-width: 480px) {
+    min-height: 300px;
+  }
 }
 
 .slick-active {
@@ -36,8 +48,17 @@
   transform: scale(1.1);
 }
 
+.slick-active .b-ourCreativeTeam__post {
+  opacity: 0;
+
+}
+
 .slick-current {
   opacity: 1;
   z-index: 10;
   transform: scale(1.7);
+}
+
+.slick-current .b-ourCreativeTeam__post {
+  opacity: 1;
 }
