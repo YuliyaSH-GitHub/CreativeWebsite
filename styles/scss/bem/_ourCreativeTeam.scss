@@ -1,4 +1,5 @@
 .b-ourCreativeTeam {
+  position: relative;
   &_decor {
     background-color: $colorBackSection;
     padding: 106px 0;
@@ -11,6 +12,7 @@
   }
   &__title {
     text-align: center;
+    padding: 0 15px;
     margin-bottom: 5px;
   }
   &__wrapper {
@@ -74,7 +76,7 @@
   &__imageTitle {
     position: absolute;
     bottom: 22%;
-    left: calc(50% - 62px);
+    left: calc(50% - 70px);
     @media (max-width: 480px) {
       bottom: 20%;
       left: calc(50% - 42px);
@@ -152,5 +154,16 @@
     right: 0;
     background: url(../../img/ourCreativeTeam/right.png) 0 0 / 100% no-repeat;
     z-index: 15;
+  }
+}
+.b-ourCreativeTeam::after {
+  @extend %backElemDelta;
+  border: 215px solid transparent;
+  border-left-color: $colorBackDelta;
+  top: -215px;
+  left: 0;
+  z-index: 20;
+  @media (max-width: 900px) {
+    display: none;
   }
 }

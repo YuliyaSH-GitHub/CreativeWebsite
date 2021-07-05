@@ -7,7 +7,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     adaptiveHeight: true,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 900,
     responsive:[
 			{
