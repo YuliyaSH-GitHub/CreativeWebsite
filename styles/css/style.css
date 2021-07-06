@@ -55,7 +55,7 @@
           justify-content: space-between;
 }
 
-.b-howWeWorks::after, .b-ourCreativeTeam::after, .b-whoWeAre::after, .b-whatWeDo::after {
+.b-howWeWorks::after, .b-ourCreativeTeam::after, .b-whatClientSays::after, .b-whatClientSays::before, .b-whoWeAre::after, .b-whatWeDo::after {
   content: "";
   display: block;
   width: 0;
@@ -750,6 +750,7 @@ li {
 
 .b-ourCreativeTeam {
   position: relative;
+  z-index: 5;
 }
 
 .b-ourCreativeTeam_decor {
@@ -995,11 +996,15 @@ li {
   position: relative;
 }
 
+.b-whatClientSays_overflow {
+  overflow: hidden;
+}
+
 .b-whatClientSays_decor {
   padding: 100px 0 125px;
 }
 
-@media (max-width: 1209px) {
+@media (max-width: 1050px) {
   .b-whatClientSays_decor {
     padding: 65px 0 55px 0;
   }
@@ -1015,11 +1020,17 @@ li {
   text-align: left;
   padding: 0 0 52px 95px;
   margin-bottom: 15px;
+  z-index: 15;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1500px) {
   .b-whatClientSays__title {
     text-align: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .b-whatClientSays__title {
     padding: 0 15px;
   }
 }
@@ -1036,7 +1047,7 @@ li {
       flex-wrap: wrap;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .b-whatClientSays__divContent_disposition {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1055,6 +1066,18 @@ li {
   padding-top: 60px;
 }
 
+@media (max-width: 1350px) {
+  .b-whatClientSays__divContent_padding {
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .b-whatClientSays__divContent_padding {
+    padding-left: 0;
+  }
+}
+
 .b-whatClientSays__imageWrap {
   width: 300px;
   height: 300px;
@@ -1063,7 +1086,8 @@ li {
           transform: rotate(45deg) !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 8px solid #fff;
+  border: 10px solid #fff;
+  z-index: 15;
 }
 
 @media (max-width: 480px) {
@@ -1084,6 +1108,7 @@ li {
 
 .b-whatClientSays__quoteDiv {
   position: relative;
+  z-index: 15;
 }
 
 .b-whatClientSays__quoteDiv_margin {
@@ -1169,12 +1194,12 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 35px;
+  margin: 15px 0 15px 35px;
 }
 
 @media (max-width: 425px) {
   .b-whatClientSays__iconDiv_disposition {
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 
@@ -1193,6 +1218,34 @@ li {
      object-fit: cover;
   -webkit-transform: rotate(-45deg) scale(1.42);
           transform: rotate(-45deg) scale(1.42);
+}
+
+.b-whatClientSays::after {
+  border: 300px solid transparent;
+  border-right-color: #171717;
+  top: -300px;
+  right: 0;
+  z-index: -10;
+}
+
+@media (max-width: 1000px) {
+  .b-whatClientSays::after {
+    display: none;
+  }
+}
+
+.b-whatClientSays::before {
+  border: 475px solid transparent;
+  border-left-color: #bc2e3a;
+  top: -43px;
+  left: 0;
+  z-index: 14;
+}
+
+@media (max-width: 1000px) {
+  .b-whatClientSays::before {
+    display: none;
+  }
 }
 
 .b-whoWeAre {
