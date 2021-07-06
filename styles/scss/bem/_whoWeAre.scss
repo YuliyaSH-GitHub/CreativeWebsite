@@ -61,7 +61,7 @@
     }
   }
   &_linkDecor:hover {
-    color: darken($colorWhite, 30%);
+    color: $colorWhite;
   }
   &__image {
     width: 687px;

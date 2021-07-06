@@ -73,19 +73,20 @@
   &__gridItem:nth-child(3)::before {
     background: url(#{$pathToImg}/getInTouch/icon03.png) no-repeat center;
   }
+
+  &__gridItemText {
+    max-width: 230px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: inherit;
+  }
   &__gridLink {
     display: inline-block;
     max-width: 100%;
     color: inherit;
   }
   &__gridLink:hover {
-    color: $colorFooterTitle;
-  }
-  &__gridItemText {
-    max-width: 230px;
-    line-height: 24px;
-    letter-spacing: 0.025em;
-    color: inherit;
+    color: $colorBackground;
   }
   &__gridItemTitle {
     font: 700 22px $fontSectionText;
