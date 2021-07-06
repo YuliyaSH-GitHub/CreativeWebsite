@@ -78,7 +78,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -106,6 +108,8 @@ li {
 .sectionTitle {
   font: 400 62px/0.9 "peace sans", sans-serif;
   color: #494949;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @media (max-width: 425px) {
@@ -414,7 +418,7 @@ li {
 }
 
 .b-getInTouch__iconLink:hover {
-  color: #9f9f9f;
+  color: #bc2e3a;
 }
 
 .b-getInTouch__copyright {
@@ -1070,6 +1074,13 @@ li {
      object-fit: cover;
   -webkit-transform: rotate(-45deg) scale(1.42);
           transform: rotate(-45deg) scale(1.42);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.b-ourCreativeTeam__image:hover {
+  -webkit-transform: rotate(-45deg) scale(1.5);
+          transform: rotate(-45deg) scale(1.5);
 }
 
 .b-ourCreativeTeam__imageTitle {
@@ -1309,6 +1320,13 @@ li {
      object-fit: cover;
   -webkit-transform: rotate(-45deg) scale(1.42);
           transform: rotate(-45deg) scale(1.42);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.b-whatClientSays__image:hover {
+  -webkit-transform: rotate(-45deg) scale(1.5);
+          transform: rotate(-45deg) scale(1.5);
 }
 
 .b-whatClientSays__quoteDiv {
@@ -1620,6 +1638,8 @@ li {
   grid-column: 1/-1;
   text-align: center;
   margin-bottom: 30px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 @media (max-width: 1209px) {

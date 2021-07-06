@@ -10,7 +10,9 @@ body {
 a {
   text-decoration: none;
 }
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 li {
@@ -36,18 +38,24 @@ li {
 .sectionTitle {
   font: 400 62px/0.9 $fontSectionTitle;
   color: $colorSectionTitle;
+  transition-duration: 0.5s;
   @media (max-width: 425px) {
     font: 400 50px/0.9 $fontSectionTitle;
   }
 }
+// .sectionTitle:hover {
+//   transform: scale(1.1);
+//   transition-duration: 0.5s;
+//   text-shadow: 4px 4px 5px $colorHeaderButton;
+// }
 
 .sectionText {
   font: 400 17px $fontSectionText;
   line-height: 30px;
   color: $colorSectionText;
 }
-.hidden{
-  opacity:0;
+.hidden {
+  opacity: 0;
 }
 .buttonLinkDiv {
   max-width: 198px;

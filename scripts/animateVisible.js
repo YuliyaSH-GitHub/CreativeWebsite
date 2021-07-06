@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $('.b-header__title_decor').addClass("hidden").viewportChecker({
+        classToAdd: 'animate__zoomIn',
+        offset: 100,
+        classToRemove: 'hidden'
+        
+    });
     $('.b-whoWeAre__divContent').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInLeft',
         offset: 400,

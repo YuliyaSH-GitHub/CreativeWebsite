@@ -69,11 +69,10 @@
   }
   &__gridItem:nth-child(2)::before {
     background: url(#{$pathToImg}/getInTouch/icon02.png) no-repeat center;
-
   }
   &__gridItem:nth-child(3)::before {
     background: url(#{$pathToImg}/getInTouch/icon03.png) no-repeat center;
-     }
+  }
   &__gridLink {
     display: inline-block;
     max-width: 100%;
@@ -120,7 +119,7 @@
     color: inherit;
   }
   &__iconLink:hover {
-    color: $colorFooterTitle;
+    color: $colorBackground;
   }
   &__copyright {
     z-index: 10;
