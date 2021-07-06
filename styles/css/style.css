@@ -120,6 +120,14 @@ li {
   color: #6a6a6a;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.buttonLinkDiv {
+  max-width: 198px;
+}
+
 .navbar-light .navbar-toggler {
   color: inherit;
   border: none;
@@ -326,7 +334,7 @@ li {
 .b-getInTouch__gridItem::before {
   content: "";
   display: inline-block;
-  width: 54px;
+  width: 50px;
   height: 54px;
   background: url(../../../img/getInTouch/icon01.png) no-repeat center;
   background-size: contain;
@@ -589,6 +597,8 @@ li {
   display: block;
   width: 60%;
   text-align: center;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
 }
 
 @media (max-width: 1439px) {

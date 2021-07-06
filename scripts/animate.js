@@ -8,6 +8,14 @@ buttonLink.forEach(item => {
     })
 });
 
+let buttonLinkDiv = document.querySelector('.buttonLinkDiv');
+buttonLinkDiv.addEventListener('mouseover', () => {
+    buttonLinkDiv.classList.add('animate__pulse');
+    setTimeout(() => {
+        buttonLinkDiv.classList.remove('animate__pulse');
+    }, 1000);
+});
+
 
 let slideContent = document.querySelectorAll('.b-howWeWorks__slideContent');
 slideContent.forEach(item => {

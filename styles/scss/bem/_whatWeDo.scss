@@ -56,13 +56,12 @@
       padding: 74px 0 0 0;
     }
   }
-  &__gridItem::before {
+   &__gridItem::before {
     content: "";
     display: inline-block;
     width: 73px;
     height: 73px;
     border-radius: 50%;
-    // background: url(#{$pathToImg}/whatWeDo/icon01.png)  no-repeat auto $colorBackground center ;
     background-image: url(#{$pathToImg}/whatWeDo/icon01.png);
     background-color: $colorBackground;
     background-position: center center;
