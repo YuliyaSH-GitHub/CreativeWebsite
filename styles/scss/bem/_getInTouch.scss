@@ -1,0 +1,102 @@
+.b-getInTouch {
+  min-height: 572px;
+  color: $colorWhite;
+  &_decor {
+    background: url(#{$pathToImg}/getInTouch/img01.jpg),
+      $colorBackDelta no-repeat center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 90px 0 62px;
+    @media (max-width: 1209px) {
+      padding: 65px 0 55px 0;
+    }
+    @media (max-width: 425px) {
+      padding: 35px 0;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+    grid-row-gap: 15px;
+    grid-column-gap: 30px;
+    @media (max-width: 1228px) {
+      margin: 0 30px;
+    }
+    @media (max-width: 965px) {
+      grid-column-gap: 20px;
+    }
+    // @media (max-width: 375px) {
+    //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // }
+  }
+  &__title {
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 90px;
+    color: $colorFooterTitle;
+    @media (max-width: 945px) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 425px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__gridItem {
+    justify-self: center;
+    padding-left: 80px;
+    margin: 0 30px 30px;
+    position: relative;
+    @media (max-width: 945px) {
+      justify-self: left;
+    }
+
+    // @media (min-width: 425px) and (max-width: 584px) {
+    //   margin-left: calc(50% - 130px);
+    //   margin-right: calc(50% - 130px);
+    // }
+    @media (max-width: 425px) {
+      padding: 0 10px 0 70px;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__gridItem::before {
+    content: "";
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background: url(#{$pathToImg}/getInTouch/icon01.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  &__gridItem:nth-child(2)::before {
+    background: url(#{$pathToImg}/getInTouch/icon02.png) no-repeat center;
+  }
+  &__gridItem:nth-child(3)::before {
+    background: url(#{$pathToImg}/getInTouch/icon03.png) no-repeat center;
+  }
+  &__gridLink {
+    display: inline-block;
+    max-width: 100%;
+    color: inherit;
+  }
+
+  &__gridItemText {
+    max-width: 230px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    color: inherit;
+  }
+  &__gridItemTitle {
+    font: 700 22px $fontSectionText;
+    letter-spacing: -0.025em;
+    color: inherit;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    margin-bottom: 20px;
+  }
+}

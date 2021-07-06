@@ -234,6 +234,135 @@ li {
   opacity: 1;
 }
 
+.b-getInTouch {
+  min-height: 572px;
+  color: #fff;
+}
+
+.b-getInTouch_decor {
+  background: url(../../../img/getInTouch/img01.jpg), #171717 no-repeat center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding: 90px 0 62px;
+}
+
+@media (max-width: 1209px) {
+  .b-getInTouch_decor {
+    padding: 65px 0 55px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-getInTouch_decor {
+    padding: 35px 0;
+  }
+}
+
+.b-getInTouch__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: minmax(50px, auto);
+  -ms-grid-columns: (minmax(282px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  grid-row-gap: 15px;
+  grid-column-gap: 30px;
+}
+
+@media (max-width: 1228px) {
+  .b-getInTouch__grid {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 965px) {
+  .b-getInTouch__grid {
+    grid-column-gap: 20px;
+  }
+}
+
+.b-getInTouch__title {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 90px;
+  color: #9f9f9f;
+}
+
+@media (max-width: 945px) {
+  .b-getInTouch__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-getInTouch__title {
+    margin-bottom: 50px;
+  }
+}
+
+.b-getInTouch__gridItem {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-left: 80px;
+  margin: 0 30px 30px;
+  position: relative;
+}
+
+@media (max-width: 945px) {
+  .b-getInTouch__gridItem {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+}
+
+@media (max-width: 425px) {
+  .b-getInTouch__gridItem {
+    padding: 0 10px 0 70px;
+    margin: 0 0 30px 0;
+  }
+}
+
+.b-getInTouch__gridItem::before {
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background: url(../../../img/getInTouch/icon01.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.b-getInTouch__gridItem:nth-child(2)::before {
+  background: url(../../../img/getInTouch/icon02.png) no-repeat center;
+}
+
+.b-getInTouch__gridItem:nth-child(3)::before {
+  background: url(../../../img/getInTouch/icon03.png) no-repeat center;
+}
+
+.b-getInTouch__gridLink {
+  display: inline-block;
+  max-width: 100%;
+  color: inherit;
+}
+
+.b-getInTouch__gridItemText {
+  max-width: 230px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  color: inherit;
+}
+
+.b-getInTouch__gridItemTitle {
+  font: 700 22px "open sans", sans-serif;
+  letter-spacing: -0.025em;
+  color: inherit;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  margin-bottom: 20px;
+}
+
 .b-header {
   position: relative;
   height: 890px;
@@ -1507,7 +1636,7 @@ li {
 }
 
 .b-whatWeDo__gridItemText {
-  width: 300px;
+  max-width: 300px;
   padding-right: 10px;
 }
 

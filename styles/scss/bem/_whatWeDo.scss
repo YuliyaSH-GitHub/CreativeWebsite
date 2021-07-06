@@ -92,11 +92,8 @@
   }
 
   &__gridItemText {
-    width: 300px;
+    max-width: 300px;
     padding-right: 10px;
-    @media (max-width: 810px) {
-      // width: 240px;
-    }
     @media (max-width: 800px) {
       width: 100%;
     }
