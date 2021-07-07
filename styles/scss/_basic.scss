@@ -31,7 +31,7 @@ li {
   @extend %buttonLink;
   @media (max-width: 425px) {
     padding: 12px 20px;
-    font: 700 16px/1 "lato-bold", sans-serif;
+    font: 700 16px/1 $fontMainNav;
   }
 }
 
@@ -43,12 +43,6 @@ li {
     font: 400 50px/0.9 $fontSectionTitle;
   }
 }
-// .sectionTitle:hover {
-//   transform: scale(1.1);
-//   transition-duration: 0.5s;
-//   text-shadow: 4px 4px 5px $colorHeaderButton;
-// }
-
 .sectionText {
   font: 400 17px $fontSectionText;
   line-height: 30px;
@@ -60,3 +54,5 @@ li {
 .buttonLinkDiv {
   max-width: 198px;
 }
+
+

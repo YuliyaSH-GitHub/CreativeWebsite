@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <header class="b-header">
+  <header id="header" class="b-header">
     <div class="headerContainer b-header_disposition">
       <div class="b-header__logotype">Agency</div>
       <nav class="navbar navbar-expand-lg navbar-light b-header__mainNav">
@@ -35,22 +35,22 @@
           <div class="collapse navbar-collapse b-header__burgerMenu" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">Home</a>
+                <a class="nav-link b-header__navLink" href="#header">Home</a>
               </li>
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">About&nbsp;us</a>
+                <a class="nav-link b-header__navLink" href="#whoWeAre">About&nbsp;us</a>
               </li>
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">Team</a>
+                <a class="nav-link b-header__navLink" href="#ourCreativeTeam">Team</a>
               </li>
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">Services</a>
+                <a class="nav-link b-header__navLink" href="#whatWeDo">Services</a>
               </li>
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">Process</a>
+                <a class="nav-link b-header__navLink" href="#howWeWorks">Process</a>
               </li>
               <li class="nav-item b-header__navItem">
-                <a class="nav-link b-header__navLink" href="#">Clients</a>
+                <a class="nav-link b-header__navLink" href="#whatClientSays">Clients</a>
               </li>
               <li class="nav-item b-header__navItem">
                 <a class="nav-link b-header__navLink" href="#">Work</a>
@@ -58,11 +58,12 @@
               <li class="nav-item b-header__navItem">
                 <a class="
                       nav-link
-                      b-header__navLink
+                      b-header__navLink b-header__navLinkSearch
                       b-header__navLink_fontAwesome
                       b-header__navLink_fontAwesomeMargin
                     " href="#"><i class="fas fa-search"></i></a>
               </li>
+              <input class="b-header__input hidden" type="text" name="headerInput" placeholder="Search">
               <li class="nav-item b-header__navItem">
                 <a class="
                       nav-link
@@ -86,7 +87,7 @@
       <img class="b-header__image" src="img/header/img02.png" alt="img" />
     </div>
   </header>
-  <section class="b-whoWeAre">
+  <section id="whoWeAre" class="b-whoWeAre">
     <div class="mainContainer b-whoWeAre_disposition">
       <div class="b-whoWeAre__divContent b-whoWeAre__divContent_disposition">
         <h2 class="sectionTitle b-whoWeAre__title animate__animated">Who <span class="b-whoWeAre__title_span">we
@@ -102,7 +103,7 @@
       <img class="b-whoWeAre__image" src="img/whoWeAre/img01.png" alt="image" />
     </div>
   </section>
-  <section class="b-whatWeDo b-whatWeDo_decor">
+  <section id="whatWeDo" class="b-whatWeDo b-whatWeDo_decor">
     <div class="mainContainer b-whatWeDo__grid">
       <h2 class="sectionTitle b-whatWeDo__title animate__animated">What we do</h2>
       <div class="b-whatWeDo__gridItem">
@@ -149,7 +150,7 @@
       </div>
     </div>
   </section>
-  <section class="b-howWeWorks b-howWeWorks_padding">
+  <section id="howWeWorks" class="b-howWeWorks b-howWeWorks_padding">
     <div class="b-howWeWorks_overflow">
       <div class="mainContainer b-howWeWorks_disposition">
         <h2 class="sectionTitle b-howWeWorks__title animate__animated">How we works</h2>
@@ -219,7 +220,7 @@
     </div>
     </div>
   </section>
-  <section class="b-ourCreativeTeam b-ourCreativeTeam_decor">
+  <section id="ourCreativeTeam" class="b-ourCreativeTeam b-ourCreativeTeam_decor">
     <div class="headerContainer b-ourCreativeTeam_padding">
       <h2 class="sectionTitle b-ourCreativeTeam__title">Our creative team</h2>
 
@@ -270,7 +271,7 @@
       </div>
     </div>
   </section>
-  <section class="b-whatClientSays b-whatClientSays_decor">
+  <section id="whatClientSays" class="b-whatClientSays b-whatClientSays_decor">
     <div class="b-whatClientSays_overflow">
       <div class="mainContainer">
         <h2 class="sectionTitle b-whatClientSays__title animate__animated">What client says</h2>
@@ -348,11 +349,12 @@
   <script src="scripts/jquery/jquery.js"></script>
   <script src="scripts/viewport-checker/jquery.viewportchecker.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/slick/slick.min.js"></script>
   <script src="scripts/animate.js"></script>
-  <script src="scripts/slider.js"></script>
+  <script src="scripts/slider-swiper.js"></script>
   <script src="scripts/slick-slider.js"></script>
   <script src="scripts/animateVisible.js"></script>
+  <script src="scripts/search.js"></script>
 </body>
 
 </html>

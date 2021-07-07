@@ -1,6 +1,6 @@
 .b-header {
   position: relative;
-  height: 890px;
+  height: 920px;
   background: url(#{$pathToImg}/header/img01.jpg) no-repeat center;
   background-blend-mode: multiply;
   background-size: cover;
@@ -17,8 +17,12 @@
     @extend %flexSpaceBetween;
     position: fixed;
     z-index: 15;
-
-    background-color: $backBurgerMenu;
+    &:hover {
+      background-color: $backBurgerMenu;
+    }
+    @media (min-width: 1440px) {
+      padding: 24px 200px 0;
+    }
   }
 
   &__logotype {
@@ -28,6 +32,7 @@
     z-index: 5;
     @media (max-width: 1440px) {
       margin-left: 15px;
+      margin-bottom: 8px;
     }
   }
 
@@ -47,18 +52,18 @@
   }
   &__burgerMenu {
     @media (max-width: 991px) {
-      // margin-top: -2px;
       padding: 15px 0;
       background-color: $backBurgerMenu;
+      margin-top: 6px;
       @media (max-width: 425px) {
-        margin-top: 7px;
+        margin-top: 15px;
       }
     }
   }
   &__navLink {
+    position: relative;
     color: inherit !important;
     margin: 0 0 3px 6px;
-    // transition-duration: 1s !important;
     @media (max-width: 991px) {
       margin: 10px 0;
     }
@@ -77,6 +82,19 @@
     padding-bottom: 6px;
     border-bottom: 1px solid $colorWhite;
   }
+  &__input {
+    padding: 10px 15px;
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+  }
+  &__input::placeholder {
+    color: $colorHeaderButton;
+    font: 400 16px $fontSectionText;
+  }
   &__navItem {
     align-self: flex-end;
     @media (max-width: 991px) {
@@ -89,7 +107,7 @@
     background-color: $colorBackground;
     mix-blend-mode: multiply;
     width: 100%;
-    height: 890px;
+    height: 920px;
     font: 700 158px/0.9 $fontHeaderTitle;
     text-transform: uppercase;
     letter-spacing: 0.075em;
@@ -156,7 +174,7 @@
   }
   &_linkDecor {
     position: absolute;
-    bottom: 30%;
+    bottom: 23%;
     left: 26%;
     color: $colorHeaderButton;
     background-color: $colorWhite;
@@ -165,7 +183,7 @@
     text-align: center;
     animation-duration: 1s;
     @media (max-width: 1000px) {
-      bottom: 43%;
+      bottom: 33%;
       left: 15%;
     }
     @media (max-width: 850px) {
@@ -173,12 +191,12 @@
       left: 15%;
     }
     @media (max-width: 630px) {
-      bottom: 58%;
+      bottom: 48%;
       left: 10%;
     }
-    @media (max-width: 500px) {
-      bottom: 65%;
-      left: 15%;
+    @media (max-width: 550px) {
+      bottom: 55%;
+      left: 10%;
     }
   }
   &_linkDecor:hover {
@@ -212,7 +230,7 @@
     }
     @media (max-width: 500px) {
       width: 90%;
-      bottom: 10%;
+      bottom: 3%;
     }
   }
 }
