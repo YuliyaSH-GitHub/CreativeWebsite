@@ -39,7 +39,6 @@
     url("../../fonts/open-sans/open-sans_extrabold.otf") format("otf");
 }
 
-$pathToImg: "../../../img";
 $colorWhite: #fff;
 $colorHeaderButton: #242424;
 $colorBackground: #bc2e3a;
@@ -91,4 +90,14 @@ $fontSectionText: "open sans", sans-serif;
   width: 0;
   height: 0;
   position: absolute;
+}
+%burger {
+  content: "";
+  display: inline-block;
+  background-color: $colorWhite;
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  height: 3px;
+  left: 0;
 }

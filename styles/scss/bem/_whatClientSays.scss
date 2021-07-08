@@ -1,5 +1,6 @@
 .b-whatClientSays {
   position: relative;
+  z-index: 0;
   &_overflow {
     overflow: hidden;
   }

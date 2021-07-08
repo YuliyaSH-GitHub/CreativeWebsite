@@ -3,40 +3,40 @@ $(document).ready(function () {
         classToAdd: 'animate__zoomIn',
         offset: 100,
         classToRemove: 'hidden'
-        
+
     });
     $('.b-whoWeAre__divContent').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInLeft',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
     $('.b-whoWeAre__image').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-whatWeDo__title').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-whatWeDo__gridItem').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInDown',
-        offset: 450,
+        offset: 250,
         classToRemove: 'hidden'
     });
 
     $('.b-howWeWorks__title').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__fadeInTopRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-howWeWorks__text').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInDown',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
@@ -47,25 +47,25 @@ $(document).ready(function () {
     });
     $('.b-howWeWorks__slide').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-ourCreativeTeam__title').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__fadeInTopRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-ourCreativeTeam__slider').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__zoomInRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
     $('.b-whatClientSays__title').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__fadeInBottomRight',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
@@ -83,7 +83,7 @@ $(document).ready(function () {
 
     $('.b-getInTouch__title').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__jackInTheBox',
-        offset: 400,
+        offset: 300,
         classToRemove: 'hidden'
     });
 
