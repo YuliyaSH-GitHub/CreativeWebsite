@@ -31,6 +31,10 @@ li {
 
 .buttonLink {
   @extend %buttonLink;
+  @media (max-width: 570px) {
+    padding: 14px 24px;
+    font: 700 20px/1 $fontMainNav;
+  }
   @media (max-width: 425px) {
     padding: 12px 20px;
     font: 700 16px/1 $fontMainNav;
@@ -55,6 +59,7 @@ li {
 }
 .buttonLinkDiv {
   max-width: 198px;
+  margin: 0 auto;
 }
 
 

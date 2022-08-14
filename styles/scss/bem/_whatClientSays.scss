@@ -84,20 +84,20 @@
 
   &__quoteDiv::before {
     content: " “ ";
-    font: 600 200px sans-serif;
+    font: 600 200px $fontQuote;
     line-height: 331px;
     color: $colorSectionText;
     position: absolute;
-    top: -34%;
-    left: -16%;
+    top: -20%;
+    left: -12%;
     @media (max-width: 1100px) {
-      top: -42%;
-      left: -1%;
+      top: -35%;
+      left: 0;
     }
     @media (max-width: 425px) {
-      font: 600 150px sans-serif;
-      top: -16%;
-      left: -1%;
+      font: 600 150px $fontQuote;
+      top: -10%;
+      left: 1%;
     }
   }
   &__text {

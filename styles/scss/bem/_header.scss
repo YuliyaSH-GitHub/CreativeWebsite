@@ -6,12 +6,12 @@ body.lock {
 .b-header {
   position: relative;
   z-index: 1;
+  height: 920px;
   color: $colorWhite;
   background-blend-mode: multiply;
-  @media (max-width: 425px) {
+  @media (max-width: 440px) {
     height: 800px;
   }
-
   @media (max-width: 400px) {
     height: 670px;
   }
@@ -39,10 +39,13 @@ body.lock {
     height: 80px;
     @extend %flexSpaceBetween;
     align-items: center;
+    @media (max-width: 850px) {
+      height: 70px;
+    }
   }
 
   &__logotype {
-    font: 900 43px/1.1 $fontLogotype;
+    font: 900 43px/1 $fontLogotype;
     letter-spacing: -0.025em;
     align-items: flex-end;
     position: relative;
@@ -102,7 +105,7 @@ body.lock {
     @media (max-width: 850px) {
       position: fixed;
       width: 100%;
-      min-height: 460px;
+      height: 100%;
       top: -100%;
       left: 0;
       background-color: $colorSectionTitle;
@@ -136,18 +139,14 @@ body.lock {
     position: relative;
     color: inherit;
     margin: 0 0 3px 6px;
-
     @media (max-width: 991px) {
       margin: 10px 0;
     }
-
     &_fontAwesome {
       font-size: 20px;
     }
-
     &_fontAwesomeMargin {
       margin-left: 40px;
-
       @media (max-width: 850px) {
         margin-left: 0;
       }
@@ -159,15 +158,21 @@ body.lock {
     padding-bottom: 6px;
     border-bottom: 1px solid $colorWhite;
   }
-
+  &__navLinkSearch {
+    position: relative;
+  }
   &__input {
     padding: 10px 15px;
     position: absolute;
-    bottom: -37px;
-    right: 0;
+    bottom: -64px;
+    right: 10px;
     border: none;
     outline: none;
     border-radius: 2px;
+    @media (max-width: 850px) {
+      right: calc(50% - 100px);
+      bottom: -36px;
+    }
   }
 
   &__input::placeholder {
@@ -175,6 +180,10 @@ body.lock {
     font: 400 16px $fontSectionText;
   }
 
+  &__title_position {
+    position: relative;
+    height: 100%;
+  }
   &__title {
     position: absolute;
     top: 0;
@@ -200,7 +209,7 @@ body.lock {
       font-size: 68px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 440px) {
       height: 800px;
     }
 
@@ -210,17 +219,16 @@ body.lock {
     }
 
     &_decor {
-      position: absolute;
-      top: 25%;
-      left: 10%;
       display: block;
+      position: absolute;
+      top: 230px;
+      left: 3%;
       max-width: 800px;
       text-align: center;
       transition-duration: 1.5s;
 
       @media (max-width: 1439px) {
-        top: 20%;
-        left: 1%;
+        left: 0;
         width: 80%;
       }
 
@@ -232,11 +240,10 @@ body.lock {
     }
 
     &_smaller {
+      display: block;
       font-size: 96px;
       letter-spacing: 0.024em;
       line-height: 0.8;
-      display: block;
-
       @media (max-width: 1439px) {
         font-size: 76px;
       }
@@ -251,11 +258,16 @@ body.lock {
       }
     }
   }
-
+  &__linkImageContainer {
+    height: 100%;
+    &_position {
+      position: relative;
+    }
+  }
   &_linkDecor {
     position: absolute;
-    bottom: 23%;
-    left: 26%;
+    bottom: calc(10% + 5vh);
+    left: calc(12% + 10vw);
     color: $colorHeaderButton;
     background-color: $colorWhite;
     z-index: 5;
@@ -263,77 +275,51 @@ body.lock {
     text-align: center;
     animation-duration: 1s;
 
-    @media (max-width: 1000px) {
-      bottom: 33%;
-      left: 15%;
+    @media (max-width: 1439px) {
+      bottom: calc(10% + 10vw);
+      left: calc(10% + 10vw);
+    }
+
+    @media (max-width: 930px) {
+      bottom: calc(10% + 10vw);
+      left: calc(5% + 10vw);
     }
 
     @media (max-width: 850px) {
-      bottom: 50%;
-      left: 15%;
+      bottom: calc(25% + 22vw);
+      left: calc(4% + 3vw);
     }
 
-    @media (max-width: 630px) {
-      bottom: 48%;
-      left: 10%;
+    @media (max-width: 580px) {
+      bottom: calc(41% + 25vw);
     }
-
-    @media (max-width: 550px) {
-      bottom: 55%;
-      left: 10%;
-    }
-
-    @media (max-width: 390px) {
-      bottom: 55%;
-      left: 5%;
-    }
-
-    @media (max-width: 330px) {
-      bottom: 52%;
-      left: 8%;
+    @media (max-width: 400px) {
+      bottom: calc(38% + 25vw);
     }
   }
 
   &_linkDecor:hover {
     color: $colorHeaderButton;
   }
-
-  &__image {
+  &__imageDiv {
+    max-width: calc(340px + 20vw);
     position: absolute;
-    bottom: 5%;
+    bottom: -2%;
     right: 1%;
     z-index: 5;
-    width: 730px;
+    @media (max-width: 1250px) {
+      bottom: -1%;
+    }
+    @media (max-width: 450px) {
+      max-width: calc(300px + 20vw);
+    }
+    @media (max-width: 400px) {
+      max-width: calc(260px + 10vw);
+    }
+  }
+  &__image {
+    width: 100%;
     @extend %imgObject;
-    filter: drop-shadow(8px 11px 62px #1a1919e0);
-
-    @media (max-width: 1439px) {
-      width: 50%;
-    }
-
-    @media (max-width: 1200px) {
-      width: 60%;
-    }
-
-    @media (max-width: 960px) {
-      width: 65%;
-    }
-
-    @media (max-width: 870px) {
-      width: 70%;
-    }
-
-    @media (max-width: 750px) {
-      width: 75%;
-    }
-
-    @media (max-width: 600px) {
-      width: 80%;
-    }
-
-    @media (max-width: 500px) {
-      width: 87%;
-      bottom: 3%;
-    }
+    filter: drop-shadow(8px 11px 62px $imgDropShadow);
   }
 }

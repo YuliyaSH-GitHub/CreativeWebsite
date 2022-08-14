@@ -7,12 +7,12 @@ $(document).ready(function () {
     });
     $('.b-whoWeAre__divContent').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInLeft',
-        offset: 300,
+        offset: 350,
         classToRemove: 'hidden'
     });
     $('.b-whoWeAre__image').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInRight',
-        offset: 300,
+        offset: 350,
         classToRemove: 'hidden'
     });
 
@@ -36,18 +36,18 @@ $(document).ready(function () {
 
     $('.b-howWeWorks__text').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInDown',
-        offset: 300,
+        offset: 400,
         classToRemove: 'hidden'
     });
 
     $('.b-howWeWorks_linkDecor').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__zoomInRight',
-        offset: 250,
+        offset: 300,
         classToRemove: 'hidden'
     });
     $('.b-howWeWorks__slide').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInRight',
-        offset: 300,
+        offset: 400,
         classToRemove: 'hidden'
     });
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
 
     $('.b-getInTouch__copyright').addClass("hidden").viewportChecker({
         classToAdd: 'animate__animated animate__slideInUp',
-        offset: 50,
+        offset: 10,
         classToRemove: 'hidden'
     });
 });

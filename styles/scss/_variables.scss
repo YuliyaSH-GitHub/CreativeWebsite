@@ -38,6 +38,12 @@
     url("../../fonts/open-sans/open-sans_extrabold.woff") format("woff"),
     url("../../fonts/open-sans/open-sans_extrabold.otf") format("otf");
 }
+@font-face {
+  font-family: "firasans-regular";
+  src: url("../../fonts/firasans/firasans-regular.woff2") format("woff2"),
+    url("../../fonts/firasans/firasans-regular.woff") format("woff"),
+    url("../../fonts/firasans/firasans-regular.ttf") format("ttf");
+}
 
 $colorWhite: #fff;
 $colorHeaderButton: #242424;
@@ -52,12 +58,14 @@ $colorgridItemTitle: #6f6f6e;
 $colorBackNameText: #252525;
 $colorFooterTitle: #9f9f9f;
 $colorFooterBorder: rgba(113, 113, 113, 0.43);
+$imgDropShadow: #1a1919e0;
 $fontLogotype: "lato-black", sans-serif;
 $fontMainNav: "lato-bold", sans-serif;
 $fontHeaderTitle: "lemonmilk", sans-serif;
 $fontSectionTitle: "peace sans", sans-serif;
 $fontSectionTextExtraBold: "open sans_extrabold", sans-serif;
 $fontSectionText: "open sans", sans-serif;
+$fontQuote: "firasans-regular", sans-serif;
 
 %buttonLink {
   padding: 16px 33px;
